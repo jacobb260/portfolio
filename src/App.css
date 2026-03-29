@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.narrow {
+  max-width: 800px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(248, 250, 252, 0.95);
+  border-bottom: 1px solid #e2e8f0;
+  backdrop-filter: blur(8px);
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #334155;
+}
+
+.nav-links a:hover {
+  color: #0f172a;
+}
+
+.hero-section {
+  padding: 72px 0 48px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.eyebrow {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  margin: 0 0 24px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0 0 16px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin: 0 0 12px;
+}
+
+.hero-text,
+.section-text,
+.project-card p,
+.cv-block p,
+.facts-list li {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.btn-primary {
+  background: #0f172a;
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.92;
+}
+
+.btn-secondary {
+  border: 1px solid #cbd5e1;
+  background: white;
+}
+
+.btn-secondary:hover {
+  background: #f1f5f9;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+}
+
+.intro-card h2 {
+  margin-top: 0;
+}
+
+.image-placeholder {
+  height: 220px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #cbd5e1, #e2e8f0);
+  margin-bottom: 20px;
+}
+
+.facts-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.facts-list li {
+  margin-bottom: 10px;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section-alt {
+  background: #eef2f7;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.skill-badge {
+  border: 1px solid #cbd5e1;
+  background: white;
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  height: 170px;
+  background: #e2e8f0;
+  border-radius: 18px;
+  margin-bottom: 18px;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 18px;
+}
+
+.tech-pill {
+  background: #f1f5f9;
+  color: #334155;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.project-link {
+  font-weight: 600;
+  color: #0f172a;
+  margin-top: auto;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.cv-block + .cv-block {
+  margin-top: 28px;
+}
+
+.contact-section {
+  background: #0f172a;
+  color: white;
+}
+
+.contact-section .section-text,
+.contact-text {
+  color: #cbd5e1;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.contact-link {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 14px 18px;
+  border-radius: 14px;
+  color: white;
+}
+
+.contact-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .cv-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-section {
+    padding-top: 48px;
+  }
+}
