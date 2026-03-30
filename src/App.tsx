@@ -28,7 +28,7 @@ function App() {
     <div className="page">
       <header className="header">
         <div className="container nav">
-          <a href="#top" className="logo">Ditt Namn</a>
+          <a href="#top" className="logo">Jacob Lindström Bjäreklint</a>
 
           <nav className="nav-links">
             <a href="#about">Om mig</a>
@@ -43,12 +43,11 @@ function App() {
         <section className="hero-section">
           <div className="container hero-grid">
             <div>
-              <p className="eyebrow">Frontendutvecklare / Portfolio</p>
-              <h1>Hej, jag heter Ditt Namn och bygger moderna webbapplikationer.</h1>
+              <p className="eyebrow">Civilingenjörsstudent • KTH/ Portfolio</p>
+              <h1>Hej!</h1>
               <p className="hero-text">
+                Jag heter Jacob Lindström Bjäreklint och studerar till civilingenjör inom medietekink.
                 Här visar jag upp mina projekt, min erfarenhet och mitt CV.
-                Den här sidan är en bra grund att vidareutveckla med egna färger,
-                bilder och innehåll.
               </p>
 
               <div className="hero-buttons">
@@ -61,10 +60,9 @@ function App() {
               <div className="image-placeholder"></div>
               <h2>Snabb fakta</h2>
               <ul className="facts-list">
-                <li>📍 Stad, Land</li>
-                <li>💼 Roll eller titel</li>
-                <li>🛠 Fokus: React, UI, frontend</li>
-                <li>🎯 Söker: praktik / jobb / frilans</li>
+                <li>📍 Stockholm, Sverige</li>
+                <li>💼 Civilingenjörsstudent</li>
+                <li>🎯 Söker: praktik / jobb </li>
               </ul>
             </div>
           </div>
@@ -74,8 +72,10 @@ function App() {
           <div className="container narrow">
             <h2>Om mig</h2>
             <p className="section-text">
-              Skriv här en kort presentation om vem du är, vad du gillar att bygga
-              och vilken typ av roller eller projekt du är intresserad av.
+              Jag heter Jacob Lindström Bjäreklint och är 28 år. Jag studerar till civilingenjör inom Medieteknik 
+              och läser en master i datalogi med inriktning mot dataanalys. Mitt största intresse är AI och maskininlärning,
+               men jag är även intresserad av andra områden, såsom frontend- och backendutveckling.
+
             </p>
 
             <div className="skills">
