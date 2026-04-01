@@ -3,16 +3,16 @@ import './App.css'
 function App() {
   const projects = [
     {
-      title: 'Projekt 1',
-      description: 'Kort beskrivning av projektet, vad du byggde och vilken nytta det gav.',
-      tech: ['React', 'CSS', 'Firebase'],
-      link: '#',
+      title: 'hockey-agent',
+      description: 'Ett projekt som jag genomförde tillsammans med en kurskamrat i kursen "ID2223 Skalbar maskininlärning och djupinlärning". Vi utvecklade en agent som kunde besvara NHL-relaterade frågor med hjälp av funktioner som hämtade data från en feature store. Projektet använder GitHub Actions för att uppdatera statistiken dagligen, men eftersom dessa arbetsflöden stängs av när repot är inaktivt är statistiken för närvarande inte uppdaterad.',
+      tech: ['Hopsworks', 'Python', 'Pandas'],
+      link: 'https://github.com/jacobb260/hockey-agent',
     },
     {
-      title: 'Projekt 2',
-      description: 'Beskriv problemet, din lösning och vad du lärde dig.',
-      tech: ['TypeScript', 'Node.js', 'API'],
-      link: '#',
+      title: 'Transfer Learning',
+      description: 'Ett projekt som jag genomförde tillsammans med två andra kurskamrater i kursen "DD2424 Djupinlärning i Data Science". Vi använde transfer learning på Oxford-IIIT Pet Dataset för att klassificera både katter och hundar samt olika djurraser. I projektet jämförde vi flera strategier för finjustering och analyserade hur metoder som data augmentation och weighted loss påverkade modellens prestanda.',
+      tech: ['Python', 'PyTorch', 'ResNet', 'Transfer Learning'],
+      link: 'https://drive.google.com/drive/folders/1Ti-h6FeYv9nasQFDwQxmEAb4Gp9XUWRq?usp=sharing',
     },
     {
       title: 'Projekt 3',
@@ -21,8 +21,6 @@ function App() {
       link: '#',
     },
   ]
-
-  const skills = ['React', 'JavaScript', 'TypeScript', 'Node.js', 'HTML', 'CSS', 'Git']
 
   return (
     <div className="page">
@@ -73,18 +71,9 @@ function App() {
             <h2>Om mig</h2>
             <p className="section-text">
               Jag heter Jacob Lindström Bjäreklint och är 28 år. Jag studerar till civilingenjör inom Medieteknik 
-              och läser en master i datalogi med inriktning mot dataanalys. Mitt största intresse är AI och maskininlärning,
+              och läser en master i datalogi med inriktning mot dataanalys - maskininlärning. Mitt största intresse är AI och maskininlärning,
                men jag är även intresserad av andra områden, såsom frontend- och backendutveckling.
-
             </p>
-
-            <div className="skills">
-              {skills.map((skill) => (
-                <span key={skill} className="skill-badge">
-                  {skill}
-                </span>
-              ))}
-            </div>
           </div>
         </section>
 
@@ -92,8 +81,7 @@ function App() {
           <div className="container">
             <h2>Projekt</h2>
             <p className="section-text">
-              Visa de projekt du är mest stolt över. För varje projekt är det bra att
-              beskriva problemet, lösningen, teknikerna och länkar till demo eller GitHub.
+              Nedan följer några av de projekt jag har arbetat med under min tid på KTH.
             </p>
 
             <div className="projects-grid">
