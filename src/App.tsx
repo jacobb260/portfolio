@@ -117,7 +117,7 @@ function App() {
             <div>
               <h2>CV</h2>
 
-              <a href="/CV-Jacob-Lindstrom-Bjareklint.pdf" className="btn btn-primary">Ladda ner CV</a>
+              <a href="CV-Jacob-Lindstrom-Bjareklint.pdf" className="btn btn-primary">Ladda ner CV</a>
             </div>
 
             <div className="card">
