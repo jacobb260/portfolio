@@ -209,13 +209,16 @@ h3 {
 .project-card {
   display: flex;
   flex-direction: column;
+  height: 800px;
 }
 
 .project-image {
-  height: 170px;
+  height: 30%;
+  object-fit: cover;
   background: #e2e8f0;
   border-radius: 18px;
   margin-bottom: 18px;
+  width: 100%;
 }
 
 .tech-list {
