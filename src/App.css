@@ -66,6 +66,16 @@ a {
   color: #0f172a;
 }
 
+.lang-links {
+  display: flex;
+  gap: 5px;
+  color: #fcfcfc;
+}
+
+.lang-links a:hover {
+  color: #0f172a;
+}
+
 .hero-section {
   padding: 72px 0 48px;
 }
